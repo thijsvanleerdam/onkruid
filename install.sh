@@ -25,8 +25,8 @@ cp cuda/lib64/libcudnn* /usr/local/cuda/lib64
 chmod a+r /usr/local/cuda/include/cudnn.h /usr/local/cuda/lib64/libcudnn*
 
 echo "installing tensorflow"
-apt-get install libcupti-dev
-pip install tensorflow-gpu
+apt-get -y install libcupti-dev
+yes | pip install tensorflow-gpu
 
 echo "getting the testscript and running it"
 wget https://raw.githubusercontent.com/NelusTheNerd/symmetrical-octo-happiness/master/tensorflowtest.py
