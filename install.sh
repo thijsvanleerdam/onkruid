@@ -28,4 +28,6 @@ echo "installing tensorflow"
 apt-get install libcupti-dev
 pip install tensorflow-gpu
 
-echo "getting the testscript"
+echo "getting the testscript and running it"
+wget https://raw.githubusercontent.com/NelusTheNerd/symmetrical-octo-happiness/master/tensorflowtest.py
+python tensorflowtest.py
