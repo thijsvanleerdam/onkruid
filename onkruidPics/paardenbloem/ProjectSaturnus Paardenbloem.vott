@@ -1,0 +1,52 @@
+{
+    "name": "ProjectSaturnus Paardenbloem",
+    "securityToken": "ProjectSaturnus Paardenbloem Token",
+    "sourceConnection": {
+        "name": "paardenbloem",
+        "providerType": "localFileSystemProxy",
+        "providerOptions": {
+            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiNmUzNzhmM2MwY2I4MDJlYWM1NzhlYmIwMWMxMzcxMmRiZGJkNDU0NTdmMTQxNmQ2MmUyNTVkZDcyOGExMjdiZjRhN2UyOTcyYjIwOWMyN2FiOTc4ZTAyNTMwMDkwYzg3YjE0ZWVlOGIzZmIwYTIyZGMzNTgyZWYxY2Y4MGY0OGJmMTYxYTFlZjMzZjk1OWJlYTI5MzE5ZDNlZjUwY2MzZjg3NmQzODJkNmI3Mzk1NTk2N2ZlODAzYzU2OTQ4MmY4IiwiaXYiOiI1YzkzMmQ0OWNhNjRiMTRiM2U3ZjgzM2JhY2FiYTkxMWI1ZWZlOThiYjViMmU2MDEifQ=="
+        },
+        "id": "pEZZhjidk"
+    },
+    "targetConnection": {
+        "name": "paardenbloem",
+        "providerType": "localFileSystemProxy",
+        "providerOptions": {
+            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiNzgwNTNjN2RiNGVkZjlmNzRiNGI2MDAzYmNjOGRiOGMxNmFiYjQyYWM2ZGI5NWY5NDhiMzI3ZDAzZmU1NmJmNWEyZmZjMzVmN2MwYWE0NjM1Nzk0Zjc4M2Y4ODYwYTdmNDY0OGUyN2IxYTM2ZTlhNDA5ZDFjZWQzZjBiYTc4OGNhMTNkNGZhNDYzOTU0ODhlZWU1NDk1NTFhOGU5NmFkNjZhY2I3YmJjZTBkMDFiYThkY2ZkNWM2ZTBlZDU5YmU3IiwiaXYiOiJkMjNhOWNlYTU2YTk0OGMyYmQ2NDZhMWMzYWRkNjYzNTU1NTU4ZjMzOWQ4NGU5NTkifQ=="
+        },
+        "id": "pEZZhjidk"
+    },
+    "videoSettings": {
+        "frameExtractionRate": 15
+    },
+    "tags": [],
+    "id": "N368EepWD",
+    "activeLearningSettings": {
+        "autoDetect": false,
+        "predictTag": true,
+        "modelPathType": "coco"
+    },
+    "exportFormat": {
+        "providerType": "vottJson",
+        "providerOptions": {
+            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiNjk0NDJiMzgyYzlhMWE5MGNiMzFlNjEzOGVmYzE3OTc2YjViYTk0NjBlZGNlNGM0YWRhZWY4NDBhOTBhYjZmYzJiYTEwZjRmNjY5YmZhZmQ0MWQ0NjE4NmY2NjMwMDBhIiwiaXYiOiJkMmEwMWRjODQ4ZDhkZmNlMmJlMjhiZmZhNTRlZjAwNTU2MmIwYTQ2Y2Y0YTE2NzcifQ=="
+        }
+    },
+    "version": "2.1.0",
+    "lastVisitedAssetId": "f53e15d30a0f77efb6b6ddfbee6a23b4",
+    "assets": {
+        "f53e15d30a0f77efb6b6ddfbee6a23b4": {
+            "format": "jpg",
+            "id": "f53e15d30a0f77efb6b6ddfbee6a23b4",
+            "name": "pic_001.jpg",
+            "path": "file:/home/nelusthenerd/Documents/projectSaturnus/onkruidPics/paardenbloem/pic_001.jpg",
+            "size": {
+                "width": 3873,
+                "height": 2636
+            },
+            "state": 1,
+            "type": 1
+        }
+    }
+}
