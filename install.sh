@@ -46,8 +46,7 @@ wget http://projectsaturnus.area36.nl/object_detection.tar.xz
 tar -xf object_detection.tar.xz
 
 echo "compiling protoc"
-cd object_detection
-protoc object_detection/protos/*.proto --python_out=.
+cd object_detection && protoc object_detection/protos/*.proto --python_out=.
 
 echo "python stuff"
 export PYTHONPATH=$PYTHONPATH:`pwd`:`pwd`/slim
