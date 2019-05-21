@@ -45,11 +45,4 @@ echo "getting the object detection model"
 wget http://projectsaturnus.area36.nl/object_detection.tar.xz
 tar -xf object_detection.tar.xz
 
-echo "compiling protoc"
-cd object_detection && protoc object_detection/protos/*.proto --python_out=.
 
-echo "python stuff"
-export PYTHONPATH=$PYTHONPATH:`pwd`:`pwd`/slim
-
-echo "testing the object detection library"
-python object_detection/builders/model_builder_test.py
