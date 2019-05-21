@@ -31,3 +31,15 @@ yes | pip install tensorflow-gpu
 echo "getting the testscript and running it"
 wget https://raw.githubusercontent.com/NelusTheNerd/symmetrical-octo-happiness/master/tensorflowtest.py
 python tensorflowtest.py
+
+echo "Installin object detection dependancies"
+apt-get -y install protobuf-compiler python-pil python-lxml python-tk
+yes | pip install --user Cython
+yes | pip install --user contextlib2
+yes | pip install --user pillow
+yes | pip install --user lxml
+yes | pip install --user jupyter
+yes | pip install --user matplotlib
+
+
+
