@@ -41,5 +41,11 @@ yes | pip install --user lxml
 yes | pip install --user jupyter
 yes | pip install --user matplotlib
 
+echo "getting the object detection model"
+wget http://projectsaturnus.area36.nl/object_detection.tar.xz
+tar -xf object_detection.tar.xz
 
+echo "compiling protoc"
+cd object_detection
+protoc object_detection/protos/*.proto --python_out=.
 
