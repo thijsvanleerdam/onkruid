@@ -49,3 +49,5 @@ echo "compiling protoc"
 cd object_detection
 protoc object_detection/protos/*.proto --python_out=.
 
+echo "python stuff"
+export PYTHONPATH=$PYTHONPATH:`pwd`:`pwd`/slim
