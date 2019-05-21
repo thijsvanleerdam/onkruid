@@ -45,4 +45,8 @@ echo "getting the object detection model"
 wget http://projectsaturnus.area36.nl/object_detection.tar.xz
 tar -xf object_detection.tar.xz
 
+wget https://raw.githubusercontent.com/NelusTheNerd/symmetrical-octo-happiness/master/install2.sh
+chmod 777 install2.sh
+mv install2.sh /object_detection
+./object_detection/install2.sh
 
