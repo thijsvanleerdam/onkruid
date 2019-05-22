@@ -1,0 +1,26 @@
+<annotation>
+	<folder>haagwinde</folder>
+	<filename>pic_095.jpg</filename>
+	<path>/home/nelusthenerd/Pictures/projectSaturnus/haagwinde/pic_095.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>345</width>
+		<height>520</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>haagwinde</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>73</xmin>
+			<ymin>70</ymin>
+			<xmax>315</xmax>
+			<ymax>488</ymax>
+		</bndbox>
+	</object>
+</annotation>

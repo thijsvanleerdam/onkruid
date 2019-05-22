@@ -1,0 +1,26 @@
+<annotation>
+	<folder>haagwinde</folder>
+	<filename>pic_008.jpg</filename>
+	<path>/home/nelusthenerd/Pictures/projectSaturnus/haagwinde/pic_008.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>2685</width>
+		<height>2041</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>haagwinde</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>488</xmin>
+			<ymin>453</ymin>
+			<xmax>2371</xmax>
+			<ymax>1581</ymax>
+		</bndbox>
+	</object>
+</annotation>
