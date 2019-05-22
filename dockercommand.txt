@@ -1,0 +1,1 @@
+docker run --runtime=nvidia -it -v output-vol:/home/output 
