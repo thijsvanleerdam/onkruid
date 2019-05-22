@@ -28,5 +28,4 @@ RUN wget http://projectsaturnus.area36.nl/trainingdata.tar.xz \
 
 RUN mv -v legacy/train.py .
 
-
 #CMD ["jupyter", "notebook"]
