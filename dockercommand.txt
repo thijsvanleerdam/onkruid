@@ -1,1 +1,3 @@
-docker run --runtime=nvidia -it -v output-vol:/home/output 
+docker build -t trainer .
+
+docker run --runtime=nvidia -it -v /root/output:/output trainer

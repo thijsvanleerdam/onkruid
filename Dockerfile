@@ -5,6 +5,7 @@ RUN mkdir -p /tensorflow/models
 RUN apt-get install -y git python-pip wget
 RUN pip install --upgrade pip
 RUN pip install tensorflow
+RUN pip install tensorflow-gpu
 RUN apt-get install -y protobuf-compiler python-pil python-lxml
 RUN pip install jupyter
 RUN pip install matplotlib
@@ -19,5 +20,8 @@ RUN curl -L -o protobuf.zip https://github.com/google/protobuf/releases/download
 RUN export PYTHONPATH=$PYTHONPATH:`pwd`:`pwd`/slim
 
 WORKDIR /object_detection
+RUN mkdir -p /output
+
+
 
 #CMD ["jupyter", "notebook", "--allow-root", "--notebook-dir=/tensorflow/models/research/object_detection", "--ip=0.0.0.0", "--port=8888", "--no-browser"]
