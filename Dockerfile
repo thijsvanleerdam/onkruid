@@ -17,6 +17,14 @@ RUN curl -L -o protobuf.zip https://github.com/google/protobuf/releases/download
     && unzip protobuf.zip \
     && ./bin/protoc object_detection/protos/*.proto --python_out=.
 
+# Install pycocoapi
+RUN git clone --depth 1 https://github.com/cocodataset/cocoapi.git && \
+    cd cocoapi/PythonAPI && \
+    make -j8 && \
+    cp -r pycocotools /tensorflow/models/research && \
+    cd ../../ && \
+    rm -rf cocoapi
+
 RUN echo "export PYTHONPATH=$PYTHONPATH:/tensorflow/models/research/:/tensorflow/models/research/slim" | tee -a ~/.bashrc
 
 RUN python setup.py install
