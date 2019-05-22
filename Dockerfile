@@ -2,13 +2,13 @@ FROM tensorflow/tensorflow:latest-gpu
 
 RUN apt-get update && yes | apt-get upgrade
 RUN mkdir -p /tensorflow/models
-RUN apt-get install -y git python-pip wget
-RUN pip install --upgrade pip
-RUN pip install tensorflow
-RUN pip install tensorflow-gpu
+RUN apt-get install -y git python3-pip wget
+RUN pip3 install --upgrade pip
+RUN pip3 install tensorflow
+RUN pip3 install tensorflow-gpu
 RUN apt-get install -y protobuf-compiler python-pil python-lxml
-RUN pip install jupyter
-RUN pip install matplotlib
+RUN pip3 install jupyter
+RUN pip3 install matplotlib
 
 RUN git clone https://github.com/tensorflow/models.git /tensorflow/models
 
@@ -25,7 +25,7 @@ RUN curl -L -o protobuf.zip https://github.com/google/protobuf/releases/download
 
 RUN echo "export PYTHONPATH=$PYTHONPATH:/tensorflow/models/research/:/tensorflow/models/research/slim" | tee -a ~/.bashrc
 
-RUN python setup.py install
+RUN python3 setup.py install
 
 WORKDIR /tensorflow/models/research/object_detection
 
