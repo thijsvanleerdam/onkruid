@@ -17,7 +17,7 @@ RUN curl -L -o protobuf.zip https://github.com/google/protobuf/releases/download
     && unzip protobuf.zip \
     && ./bin/protoc object_detection/protos/*.proto --python_out=.
 
-RUN echo "export PYTHONPATH=$PYTHONPATH:/tensorflow/models/research/:/tensorflow/models/research/slim" | tee -a ~/.bashrc
+RUN echo "export PYTHONPATH=$PYTHONPATH:/tensorflow/models/:/tensorflow/models/slim" | tee -a ~/.bashrc
 
 RUN python setup.py install
 

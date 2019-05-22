@@ -7,4 +7,4 @@ docker build -t trainer .
 
 docker run --runtime=nvidia -it trainer /bin/bash
 
-python train.py --train_dir=./training/ --pipeline_config_path=./training/ssd_mobilenet_v1_pets.config
+python train.py --train_dir=training/ --pipeline_config_path=training/ssd_mobilenet_v1_pets.config
