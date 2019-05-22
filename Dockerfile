@@ -10,7 +10,7 @@ RUN pip install jupyter
 RUN pip install matplotlib
 RUN git clone https://github.com/tensorflow/models.git /tensorflow/models
 WORKDIR /tensorflow/models/research
-RUN protoc object_detection/protos/*.proto --python_out=.
+RUN ./bin/protoc object_detection/protos/*.proto --python_out=.
 RUN export PYTHONPATH=$PYTHONPATH:`pwd`:`pwd`/slim
 
 #CMD ["jupyter", "notebook", "--allow-root", "--notebook-dir=/tensorflow/models/research/object_detection", "--ip=0.0.0.0", "--port=8888", "--no-browser"]
