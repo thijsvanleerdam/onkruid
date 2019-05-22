@@ -2,13 +2,14 @@ FROM tensorflow/tensorflow:latest-gpu
 
 RUN apt-get update && yes | apt-get upgrade
 RUN mkdir -p /tensorflow/models
-RUN apt-get install -y python3 git python3-pip wget
+RUN apt-get install -y python3-dev git python3-pip wget
 RUN pip3 install --upgrade pip
 RUN pip3 install tensorflow
 RUN pip3 install tensorflow-gpu
 RUN apt-get install -y protobuf-compiler python-pil python-lxml
 RUN pip3 install jupyter
 RUN pip3 install matplotlib
+RUN pip3 install numpy
 RUN pip3 install cython
 RUN pip3 install pycocotools
 
