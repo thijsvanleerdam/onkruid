@@ -1,3 +1,8 @@
+
+wget https://raw.githubusercontent.com/NelusTheNerd/symmetrical-octo-happiness/master/saturnus.sh && chmod 777 saturnus.sh
+
+wget https://raw.githubusercontent.com/NelusTheNerd/symmetrical-octo-happiness/master/Dockerfile
+
 docker build -t trainer .
 
 docker run --runtime=nvidia -it trainer /bin/bash
