@@ -26,7 +26,7 @@ WORKDIR /tensorflow/models/research/object_detection
 RUN wget http://projectsaturnus.area36.nl/trainingdata.tar.xz \
      && tar -xf trainingdata.tar.xz
 
-RUN mv -v /legacy .
+RUN mv -v /legacy/* .
 
 
 #CMD ["jupyter", "notebook"]
