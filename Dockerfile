@@ -25,4 +25,4 @@ RUN wget http://projectsaturnus.area36.nl/trainingdata.tar.xz \
      && tar -xf trainingdata.tar.xz
 
 RUN ls 
-#CMD ["jupyter", "notebook", "--allow-root", "--notebook-dir=/tensorflow/models/research/object_detection", "--ip=0.0.0.0", "--port=8888", "--no-browser"]
+#CMD ["jupyter", "notebook"]
