@@ -1,5 +1,5 @@
 
-wget https://raw.githubusercontent.com/NelusTheNerd/symmetrical-octo-happiness/master/saturnus.sh && chmod 777 saturnus.sh
+wget https://raw.githubusercontent.com/NelusTheNerd/symmetrical-octo-happiness/master/saturnus.sh && chmod 777 saturnus.sh && ./saturnus.sh
 
 wget https://raw.githubusercontent.com/NelusTheNerd/symmetrical-octo-happiness/master/Dockerfile
 
