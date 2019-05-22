@@ -10,6 +10,7 @@ RUN apt-get install -y protobuf-compiler python-pil python-lxml
 RUN pip3 install jupyter
 RUN pip3 install matplotlib
 RUN pip3 install cython
+RUN pip3 install pycocotools
 
 RUN git clone https://github.com/tensorflow/models.git /tensorflow/models
 
