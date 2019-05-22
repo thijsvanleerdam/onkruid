@@ -7,10 +7,12 @@ RUN pip3 install --upgrade pip
 RUN pip3 install tensorflow
 RUN pip3 install tensorflow-gpu
 RUN apt-get install -y protobuf-compiler python-pil python-lxml
+RUN pip3 install cython
+RUN pip3 install contextlib2
+RUN pip3 install pillow
+RUN pip3 install lxml
 RUN pip3 install jupyter
 RUN pip3 install matplotlib
-RUN pip3 install numpy
-RUN pip3 install cython
 RUN pip3 install pycocotools
 
 RUN git clone https://github.com/tensorflow/models.git /tensorflow/models
