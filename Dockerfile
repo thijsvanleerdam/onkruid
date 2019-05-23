@@ -4,7 +4,6 @@ RUN apt-get update && yes | apt-get upgrade
 RUN mkdir -p /tensorflow/models
 RUN apt-get install -y git wget build-essential
 RUN pip install --upgrade pip
-RUN pip install tensorflow
 RUN pip install tensorflow-gpu
 
 # Install object detection api dependencies
