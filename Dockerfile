@@ -17,12 +17,7 @@ RUN apt-get install -y protobuf-compiler python-pil python-lxml python-tk && \
 RUN git clone https://github.com/tensorflow/models.git /tensorflow/models
 
 # Install pycocoapi
-RUN git clone --depth 1 https://github.com/cocodataset/cocoapi.git && \
-    cd cocoapi/PythonAPI && \
-    make -j8 && \
-    cp -r pycocotools /tensorflow/models/research && \
-    cd ../../ && \
-    rm -rf cocoapi
+RUN pip install git+https://github.com/philferriere/cocoapi.git#subdirectory=PythonAPI
 
 WORKDIR /tensorflow/models/research
 
