@@ -2,25 +2,27 @@ FROM tensorflow/tensorflow:latest-gpu
 
 RUN apt-get update && yes | apt-get upgrade
 RUN mkdir -p /tensorflow/models
-RUN apt-get install -y python3-dev git python3-pip wget
-RUN pip3 install --upgrade pip
-RUN pip3 install tensorflow
-RUN pip3 install tensorflow-gpu
-RUN apt-get install -y protobuf-compiler python-pil python-lxml
-RUN pip3 install cython
-RUN pip3 install contextlib2
-RUN pip3 install pillow
-RUN pip3 install lxml
-RUN pip3 install jupyter
-RUN pip3 install matplotlib
-RUN pip3 install pycocotools
+RUN apt-get install -y git wget build-essential
+RUN pip install --upgrade pip
+RUN pip install tensorflow
+RUN pip install tensorflow-gpu
+
+# Install object detection api dependencies
+RUN apt-get install -y protobuf-compiler python-pil python-lxml python-tk && \
+    pip install Cython && \
+    pip install contextlib2 && \
+    pip install jupyter && \
+    pip install matplotlib
 
 RUN git clone https://github.com/tensorflow/models.git /tensorflow/models
 
-RUN git clone https://github.com/cocodataset/cocoapi.git \
-    && cd cocoapi/PythonAPI \
-    && make \
-    && cp -r pycocotools /tensorflow/models/research
+# Install pycocoapi
+RUN git clone --depth 1 https://github.com/cocodataset/cocoapi.git && \
+    cd cocoapi/PythonAPI && \
+    make -j8 && \
+    cp -r pycocotools /tensorflow/models/research && \
+    cd ../../ && \
+    rm -rf cocoapi
 
 WORKDIR /tensorflow/models/research
 
@@ -30,7 +32,7 @@ RUN curl -L -o protobuf.zip https://github.com/google/protobuf/releases/download
 
 RUN echo "export PYTHONPATH=$PYTHONPATH:/tensorflow/models/research/:/tensorflow/models/research/slim" | tee -a ~/.bashrc
 
-RUN python3 setup.py install
+RUN python setup.py install
 
 WORKDIR /tensorflow/models/research/object_detection
 
