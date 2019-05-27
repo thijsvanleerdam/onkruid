@@ -37,4 +37,4 @@ RUN mv -v legacy/train.py .
 
 RUN mkdir -p training
 
-#CMD ["jupyter", "notebook"]
+CMD ["python","train.py","--train_dir=training/","--pipeline_config_path=ssd_mobilenet_v1_pets.config"]
