@@ -32,5 +32,5 @@ wget https://raw.githubusercontent.com/NelusTheNerd/symmetrical-octo-happiness/m
 
 docker build -t trainer .
 
-docker run --runtime=nvidia -v ~/training:/tensorflow/models/research/object_detection/training trainer
+docker run --runtime=nvidia -v ~/training:/tensorflow/models/research/object_detection/training -it trainer /bin/bash
 

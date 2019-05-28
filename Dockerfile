@@ -36,5 +36,3 @@ RUN wget http://projectsaturnus.area36.nl/trainingdata.tar.xz \
 RUN mv -v legacy/train.py .
 
 RUN mkdir -p training
-
-#CMD ["python","train.py","--train_dir=training/","--pipeline_config_path=ssd_mobilenet_v1_pets.config"]
