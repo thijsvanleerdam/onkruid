@@ -2,3 +2,5 @@
 *.xz
 
 images/train/
+
+output/
