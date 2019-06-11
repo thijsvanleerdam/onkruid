@@ -30,8 +30,8 @@ RUN python setup.py install
 
 WORKDIR /tensorflow/models/research/object_detection
 
-RUN wget http://projectsaturnus.area36.nl/trainingdata.tar.xz \
-     && tar -xf trainingdata.tar.xz
+RUN wget http://projectsaturnus.area36.nl/brandnetelTrainingdata.tar.xz \
+     && tar -xf brandnetelTrainingdata.tar.xz
 
 RUN mv -v legacy/train.py .
 

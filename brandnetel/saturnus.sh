@@ -28,7 +28,7 @@ docker run --runtime=nvidia -it tensorflow/tensorflow:latest-gpu \
 
 mkdir -p training
 
-wget https://raw.githubusercontent.com/NelusTheNerd/symmetrical-octo-happiness/master/Dockerfile
+wget https://raw.githubusercontent.com/NelusTheNerd/symmetrical-octo-happiness/master/brandnetel/Dockerfile
 
 docker build -t trainer .
 
