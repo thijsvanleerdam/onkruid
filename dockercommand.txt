@@ -1,5 +1,9 @@
 
+#old
 wget https://raw.githubusercontent.com/NelusTheNerd/symmetrical-octo-happiness/master/saturnus.sh && chmod 777 saturnus.sh && ./saturnus.sh
+
+#brandnetel trainer
+wget https://raw.githubusercontent.com/NelusTheNerd/symmetrical-octo-happiness/master/brandnetel/saturnus.sh && chmod 777 saturnus.sh && ./saturnus.sh
 
 wget https://raw.githubusercontent.com/NelusTheNerd/symmetrical-octo-happiness/master/Dockerfile
 
