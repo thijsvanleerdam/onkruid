@@ -5,6 +5,9 @@ wget https://raw.githubusercontent.com/NelusTheNerd/symmetrical-octo-happiness/m
 #brandnetel trainer
 wget https://raw.githubusercontent.com/NelusTheNerd/symmetrical-octo-happiness/master/brandnetel/saturnus.sh && chmod 777 saturnus.sh && ./saturnus.sh
 
+wget https://raw.githubusercontent.com/NelusTheNerd/symmetrical-octo-happiness/master/haagwinde/saturnus.sh && chmod 777 saturnus.sh && ./saturnus.sh
+
+
 wget https://raw.githubusercontent.com/NelusTheNerd/symmetrical-octo-happiness/master/Dockerfile
 
 docker build -t trainer .
@@ -18,3 +21,5 @@ docker run --runtime=nvidia -v ~/training:/tensorflow/models/research/object_det
 python train.py --train_dir=training/ --pipeline_config_path=ssd_mobilenet_v1_pets.config
 
 python model_main.py --pipeline_config_path=ssd_mobilenet_v1_pets.config --model_dir=/training/ --num_train_steps=5000 --sample_1_of_n_eval_examples=1 --alsologtostderr
+
+scp root@51.158.72.141:training.zip .
