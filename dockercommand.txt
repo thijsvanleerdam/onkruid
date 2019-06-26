@@ -7,6 +7,8 @@ wget https://raw.githubusercontent.com/NelusTheNerd/symmetrical-octo-happiness/m
 
 wget https://raw.githubusercontent.com/NelusTheNerd/symmetrical-octo-happiness/master/haagwinde/saturnus.sh && chmod 777 saturnus.sh && ./saturnus.sh
 
+wget https://raw.githubusercontent.com/NelusTheNerd/symmetrical-octo-happiness/master/kweekgras/saturnus.sh && chmod 777 saturnus.sh && ./saturnus.sh
+
 
 wget https://raw.githubusercontent.com/NelusTheNerd/symmetrical-octo-happiness/master/Dockerfile
 

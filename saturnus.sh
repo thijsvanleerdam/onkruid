@@ -21,7 +21,7 @@ curl -s -L https://nvidia.github.io/nvidia-docker/$distribution/nvidia-docker.li
   sudo tee /etc/apt/sources.list.d/nvidia-docker.list
 sudo apt-get update
 
-apt-get -y install docker-ce docker-ce-cli containerd.io
+apt-get -y install docker-ce docker-ce-cli containerd.io zip
 
 apt-get -y install nvidia-docker2
 pkill -SIGHUP dockerd
