@@ -1,5 +1,5 @@
 FROM tensorflow/tensorflow:latest-gpu
-
+ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update && yes | apt-get upgrade
 RUN mkdir -p /tensorflow/models
 RUN apt-get install -y git wget build-essential
