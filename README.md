@@ -5,3 +5,4 @@ Doel van dit project was om een applicatie te bouwen die onkruid kan herkennen. 
 
 ## Auteurs
 - nelusthenerd
+- ThijsvanLeerdam
