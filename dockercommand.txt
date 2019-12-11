@@ -24,4 +24,4 @@ python train.py --train_dir=training/ --pipeline_config_path=ssd_mobilenet_v1_pe
 
 python model_main.py --pipeline_config_path=ssd_mobilenet_v1_pets.config --model_dir=/training/ --num_train_steps=5000 --sample_1_of_n_eval_examples=1 --alsologtostderr
 
-scp root@51.158.72.141:training.zip .
+#scp root@51.158.72.141:training.zip .
