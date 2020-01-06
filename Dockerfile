@@ -1,4 +1,4 @@
-FROM tensorflow/tensorflow:latest-gpu
+FROM tensorflow/tensorflow:1.14-gpu
 ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update && yes | apt-get upgrade
 RUN mkdir -p /tensorflow/models
