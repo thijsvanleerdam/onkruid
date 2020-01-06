@@ -33,7 +33,7 @@ docker run --runtime=nvidia -it tensorflow/tensorflow:1.14-gpu \
 
 mkdir -p training
 
-wget https://raw.githubusercontent.com/NelusTheNerd/symmetrical-octo-happiness/master/Dockerfile
+wget https://github.com/thijsvanleerdam/onkruid/edit/master/Dockerfile
 
 docker build -t trainer .
 
