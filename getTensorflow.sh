@@ -3,7 +3,7 @@ apt-get update && yes | apt-get upgrade
 mkdir -p /tensorflow/models
 apt-get install -y git wget build-essential
 pip install --upgrade pip
-pip install tensorflow
+pip install tensorflow-gpu==1.14
 
 apt-get install -y protobuf-compiler python-pil python-lxml python-tk && \
     pip install Cython && \
